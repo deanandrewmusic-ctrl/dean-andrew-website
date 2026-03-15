@@ -1,228 +1,203 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dean Andrew — Home</title>
+  <!-- SEO Técnico -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dean Andrew | Música Electrónica y Pop</title>
+  <meta name="description" content="Sitio oficial del artista Dean Andrew. Música, videos, eventos y contacto.">
+  <meta name="keywords" content="Dean Andrew, música electrónica, pop, artista, conciertos, honduras">
+  <meta name="author" content="Dean Andrew Team">
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Google Analytics Placeholder -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
-<header>
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark py-3">
-      <a class="navbar-brand" href="#top" aria-label="Dean Andrew">
-        <img src="img/dean-logo.jpg" alt="Dean Andrew logo" class="img-fluid brand-logo">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/dean-logo.jpg" alt="Dean Andrew Logo">
       </a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="mainNav">
-  <ul class="navbar-nav ms-auto text-uppercase">
-    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-    <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
-    <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
-    <li class="nav-item"><a class="nav-link" href="#">Shows</a></li>
-    <li class="nav-item"><a class="nav-link" href="#">Interviews</a></li>
-    <li class="nav-item"><a class="nav-link" href="#">Merch</a></li>
-    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-  </ul>
-</div>
-    </nav>
-  </div>
-</header>
-
-<section id="top" class="hero">
-  <div class="container hero-container">
-    <div class="row justify-content-center">
-      <article class="col-12 text-center hero-content">
-        <h1 class="hero-title">DEAN ANDREW</h1>
-        <a class="btn btn-main" href="#releases">LISTEN NOW</a>
-
-        <div class="scroll-down" aria-hidden="true">
-          <span>SCROLL DOWN</span>
-          <span class="scroll-x">:D</span>
-          <span class="scroll-arrow">↓</span>
-        </div>
-      </article>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="musica.html">Música</a></li>
+          <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+          <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Dean</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</section>
+  </nav>
 
-<section id="tour" class="tour-section">
-  <div class="container-fluid">
-    <div class="row align-items-start">
-      <article class="col-lg-1 d-none d-lg-flex justify-content-center">
-        <div class="tour-label">
-          <span class="tour-line"></span>
-          <span class="tour-vertical">TOUR</span>
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="hero-title">DEAN ANDREW</h1>
+          <p class="lead mb-5 text-white-50">EXPLORANDO NUEVOS HORIZONTES MUSICALES</p>
+          <a href="#releases" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold">ESCUCHAR AHORA</a>
         </div>
-      </article>
-
-      <article class="col-lg-11">
-        <div class="tour-stage-text">DEAN ANDREW • LIVE • TOUR • MUSIC • TEGUCIGALPA •</div>
-
-        <div class="tour-image-wrap">
-          <img src="img/foto-get-your-tickets-now-2.jpg" alt="Dean Andrew en concierto" class="img-fluid tour-image">
-
-          <div class="text-center">
-            <a href="#" class="btn btn-light-section">GET YOUR TICKETS</a>
-          </div>
-        </div>
-      </article>
+      </div>
     </div>
-  </div>
-</section>
+  </header>
 
-<section id="video" class="video-section">
-  <div class="container">
-    <div class="row align-items-center gy-4">
-      <article class="col-lg-5">
-        <div class="video-card">
-          <h2 class="video-title">CAN’T FORGET<br>OFFICIAL VIDEO</h2>
-          <p class="video-text">
-            “Can’t Forget” es una colaboración de Dean Andrew con Daniel Javan y Rivio.
-            Un tema con vibra intensa y emocional: energía de escenario, recuerdos que pesan,
-            y ese mood de “no lo puedo soltar”.
+  <!-- Tour Section with Marquee -->
+  <section class="tour-section py-0">
+    <div class="marquee-container">
+      <div class="marquee-text">
+        DEAN ANDREW • LIVE TOUR 2024 • NEW MUSIC COMING SOON • TEGUCIGALPA • LIVE PERFORMANCE • DEAN ANDREW • LIVE TOUR 2024 • NEW MUSIC COMING SOON • TEGUCIGALPA • LIVE PERFORMANCE •
+      </div>
+    </div>
+    <div class="container-fluid p-0">
+      <div class="row g-0 align-items-center" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/tour-bg.jpg') center/cover; min-height: 500px; position: relative;">
+        <div class="col-12 text-center" style="z-index: 2;">
+          <a href="eventos.html" class="btn btn-light btn-lg px-5 py-3 fw-bold shadow-lg">OBTENER TICKETS</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlight Section (Video) -->
+  <section class="py-5" id="highlight">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <h2 class="section-title mb-4">CAN'T FORGET</h2>
+          <p class="text-white-50 fs-5 mb-4">
+            Una colaboración vibrante con Daniel Javan y Rivio. Un viaje emocional que captura la energía del escenario y los recuerdos que perduran.
           </p>
-
-          <a class="btn btn-light-section" target="_blank" rel="noopener"
-             href="https://www.youtube.com/watch?v=MYDd3VSfMI8&list=RDMYDd3VSfMI8&start_radio=1&pp=ygULZGVhbiBhbmRyZXegBwHSBwkJogoBhyohjO8%3D">
-            WATCH ON YOUTUBE
+          <a href="https://www.youtube.com/watch?v=MYDd3VSfMI8" target="_blank" class="btn btn-light px-4 py-2">
+            <i class="fab fa-youtube me-2"></i> VER EN YOUTUBE
           </a>
         </div>
-      </article>
-
-      <article class="col-lg-7">
-        <div class="video-image-wrap">
-          <img src="img/cantforget-foto.jpg" alt="Can't Forget - Video musical" class="img-fluid video-image">
-
-          <a class="play-btn" target="_blank" rel="noopener"
-             href="https://www.youtube.com/watch?v=MYDd3VSfMI8&list=RDMYDd3VSfMI8&start_radio=1&pp=ygULZGVhbiBhbmRyZXegBwHSBwkJogoBhyohjO8%3D"
-             aria-label="Reproducir video en YouTube">
-            <i class="fa-solid fa-play"></i>
-          </a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="releases" class="releases-section">
-  <div class="container">
-   <div class="row align-items-start gy-4 releases-top">
-  <article class="col-lg-4">
-    <div class="releases-left">
-      <div class="releases-icon">:D</div>
-      <h2 class="releases-title">LATEST<br>RELEASES</h2>
-      <a class="btn btn-dark-section" href="music.html">VIEW ALL RELEASES</a>
-    </div>
-  </article>
-
-  <article class="col-lg-5">
-    <p class="releases-note">
-      Escuchá lo más reciente de Dean Andrew: lanzamientos, visuales y música nueva.
-    </p>
-  </article>
-</div>
-
-    <div class="row gy-5 releases-grid">
-      <article class="col-lg-3 col-md-6 col-12">
-        <div class="release-card">
-          <div class="cover">
-            <img src="img/cantforget-foto.jpg" alt="Can't Forget - Dean Andrew" class="img-fluid">
-            <span class="play-badge"><i class="fa-solid fa-play"></i></span>
+        <div class="col-lg-7">
+          <div class="position-relative">
+            <img src="img/cantforget.jpg" alt="Can't Forget Video" class="img-fluid rounded shadow-lg">
+            <a href="https://www.youtube.com/watch?v=MYDd3VSfMI8" target="_blank" class="play-overlay text-decoration-none" style="opacity: 1;">
+              <i class="fas fa-play fa-3x text-white"></i>
+            </a>
           </div>
-          <h3>CAN'T FORGET</h3>
-          <p>— Dean Andrew, Daniel Javan & Rivio</p>
         </div>
-      </article>
-
-      <article class="col-lg-3 col-md-6 col-12">
-        <div class="release-card">
-          <div class="cover">
-            <img src="img/elysium-foto.jpg" alt="Elysium - Dean Andrew" class="img-fluid">
-            <span class="play-badge"><i class="fa-solid fa-play"></i></span>
-          </div>
-          <h3>ELYSIUM</h3>
-          <p>— Amero, MusicByDavid, Dean Andrew</p>
-        </div>
-      </article>
-
-      <article class="col-lg-3 col-md-6 col-12">
-        <div class="release-card">
-          <div class="cover">
-            <img src="img/nightmares-foto.jpg" alt="Nightmares - Dean Andrew" class="img-fluid">
-            <span class="play-badge"><i class="fa-solid fa-play"></i></span>
-          </div>
-          <h3>NIGHTMARES</h3>
-          <p>— CAIZ, Dean Andrew</p>
-        </div>
-      </article>
-
-      <article class="col-lg-3 col-md-6 col-12">
-        <div class="release-card">
-          <div class="cover">
-            <img src="img/stars-do-foto.jpg" alt="Stars Do - Dean Andrew" class="img-fluid">
-            <span class="play-badge"><i class="fa-solid fa-play"></i></span>
-          </div>
-          <h3>STARS DO</h3>
-          <p>— Andybear, Finaldest!nation, Dean Andrew</p>
-        </div>
-      </article>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer id="follow" class="footer-section">
-  <div class="container">
-
-    <h2 class="footer-title text-center">Follow Me</h2>
-
-    <div class="social-icons">
-
-      <a href="https://www.instagram.com/deanandrewww" target="_blank" aria-label="Instagram">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-
-      <a href="https://open.spotify.com/artist/3FLv7WMZZhNVTAago3P4Xq" target="_blank" aria-label="Spotify">
-        <i class="fa-brands fa-spotify"></i>
-      </a>
-
-      <a href="https://music.apple.com/us/artist/dean-andrew/1241478183" target="_blank" aria-label="Apple Music">
-        <i class="fa-brands fa-apple"></i>
-      </a>
-
-      <a href="https://www.tiktok.com/@deanandrewww" target="_blank" aria-label="TikTok">
-        <i class="fa-brands fa-tiktok"></i>
-      </a>
-
-      <a href="https://www.youtube.com/@deanandrewww" target="_blank" aria-label="YouTube">
-        <i class="fa-brands fa-youtube"></i>
-      </a>
-
+  <!-- Latest Releases -->
+  <section class="bg-white text-dark py-5" id="releases">
+    <div class="container py-5">
+      <div class="d-flex justify-content-between align-items-end mb-5">
+        <div>
+          <h2 class="section-title text-dark mb-0">ÚLTIMOS LANZAMIENTOS</h2>
+          <p class="text-muted mt-2">Explora lo más reciente de mi catálogo musical.</p>
+        </div>
+        <a href="musica.html" class="btn btn-dark d-none d-md-block">VER TODO</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="release-card">
+            <div class="card-img-wrapper rounded shadow">
+              <img src="img/cantforget.jpg" alt="Can't Forget" class="img-fluid">
+              <div class="play-overlay">
+                <i class="fas fa-play text-white fa-2x"></i>
+              </div>
+            </div>
+            <h5 class="mt-3 fw-bold">CAN'T FORGET</h5>
+            <p class="text-muted small">Dean Andrew, Daniel Javan & Rivio</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="release-card">
+            <div class="card-img-wrapper rounded shadow">
+              <img src="img/elysium.jpg" alt="Elysium" class="img-fluid">
+              <div class="play-overlay">
+                <i class="fas fa-play text-white fa-2x"></i>
+              </div>
+            </div>
+            <h5 class="mt-3 fw-bold">ELYSIUM</h5>
+            <p class="text-muted small">Amero, MusicByDavid, Dean Andrew</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="release-card">
+            <div class="card-img-wrapper rounded shadow">
+              <img src="img/nightmares.jpg" alt="Nightmares" class="img-fluid">
+              <div class="play-overlay">
+                <i class="fas fa-play text-white fa-2x"></i>
+              </div>
+            </div>
+            <h5 class="mt-3 fw-bold">NIGHTMARES</h5>
+            <p class="text-muted small">CAIZ, Dean Andrew</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="release-card">
+            <div class="card-img-wrapper rounded shadow">
+              <img src="img/stars-do.jpg" alt="Stars Do" class="img-fluid">
+              <div class="play-overlay">
+                <i class="fas fa-play text-white fa-2x"></i>
+              </div>
+            </div>
+            <h5 class="mt-3 fw-bold">STARS DO</h5>
+            <p class="text-muted small">Andybear, Finaldest!nation, Dean Andrew</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <p class="footer-meta text-center">
-      <strong>Grupo 2 - Daniel Mejía, Caleb Gómez, Javier Ávila, Dean Andrew, Sofía Rodríguez</strong>
-    </p>
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <h3 class="fw-bold mb-4">SÍGUEME</h3>
+      <div class="d-flex justify-content-center mb-5">
+        <a href="https://www.instagram.com/deanandrewww" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://open.spotify.com/artist/3FLv7WMZZhNVTAago3P4Xq" class="social-link" target="_blank"><i class="fab fa-spotify"></i></a>
+        <a href="https://music.apple.com/us/artist/dean-andrew/1241478183" class="social-link" target="_blank"><i class="fab fa-apple"></i></a>
+        <a href="https://www.tiktok.com/@deanandrewww" class="social-link" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/@deanandrewww" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p class="text-white-50 mb-0">
+        <strong>Grupo 2 - Daniel Mejía, Caleb Gómez, Javier Ávila, Dean Andrew, Sofía Rodríguez</strong>
+      </p>
+      <p class="small text-muted mt-2">&copy; 2024 Dean Andrew Music. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
-  </div>
-</footer>
-
-<script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Navbar Scroll Script -->
+  <script>
+    window.addEventListener('scroll', function() {
+      const nav = document.getElementById('mainNav');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 </html>
